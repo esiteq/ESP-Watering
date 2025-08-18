@@ -1,6 +1,6 @@
 // ===========================================
 // DEFAULTS.H - Configuration file
-// ESP8266 Irrigation System
+// ESP-Watering System
 // ===========================================
 
 // MQTT default settings
@@ -10,12 +10,13 @@
 
 // Other default settings
 #define DEFAULT_MAX_WATER_TIME 300        // Default maximum watering time (5 minutes)
-#define DEFAULT_DEVICE_PREFIX "water_"    // Device ID prefix
+#define DEFAULT_DEVICE_PREFIX "watering_" // Device ID prefix
+#define DEFAULT_WATER_SUFFIX ""           // Water topic suffix (e.g. "_3247" for unique topics)
 #define MQTT_PORT 1883                    // Standard MQTT port
 
 // WiFi configuration portal
-#define WIFI_AP_NAME "ESPIrrigation"      // WiFi access point name
-#define WIFI_AP_PASS ""                   // WiFi access point password
+#define WIFI_AP_NAME "ESP-Watering"       // WiFi access point name
+#define WIFI_AP_PASS ""                   // WiFi access point password (empty = no password)
 #define WIFI_PORTAL_TIMEOUT 60            // Configuration portal timeout (seconds)
 
 // NTP settings
